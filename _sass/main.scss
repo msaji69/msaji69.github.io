@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 50rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-bottom: 0.1rem solid #eee;
+
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+
+.sajiStamp {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.sidebar-content-wrap {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 7.75rem);
+  min-width: 25rem;
+  border-right: 0.1rem solid #eee;
+  padding: 2rem 0;
+}
+
+.sidebar-item {
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.8rem 4rem;
+
+  &:hover {
+    background: #eee;
+    color: #000;
+  }
+}
+
+.content-body {
+  width: 100%;
+  padding: 2rem 10rem;
+
+  h1 {
+    margin-top: 0;
+  }
+}
