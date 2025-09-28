@@ -22,5 +22,18 @@
         {{ content }}
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const words = ["welcome", "contact", "collab!?", "lurk further..."];
+        const heading = document.getElementById("rotating-heading");
+        if (!heading) return;  // in case the element isn't on every page
+        let i = 0;
+
+      setInterval(() => {
+        i = (i + 1) % words.length;
+        heading.textContent = words[i];
+      }, 2000); // change every 2 seconds (2000ms)
+    });
+    </script>
   </body>
 </html>
