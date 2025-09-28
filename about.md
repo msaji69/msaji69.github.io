@@ -1,7 +1,7 @@
 ---
 title: Maiyo Saji - About
 ---
-# About
+# about
 
 <!-- ![A picture of Maiyo's face](/assets/maiyo_face.jpg) -->
 
