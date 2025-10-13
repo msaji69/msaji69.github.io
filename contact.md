@@ -1,8 +1,15 @@
 ---
 title: Maiyo Saji - Contact Me
+body_class: contact-me
 ---
-## <h2><span id="rotating-heading">contact me</span></h2>
 
-#### [saji0012@umn.edu](mailto:saji0012@umn.edu)
-#### [Instagram](https://www.instagram.com/ma.i.yo/)
-#### [LinkedIn](https://www.linkedin.com/in/maiyo-saji/)
+## contact me
+
+![](/assets/icons/mail.svg)
+[saji0012@umn.edu](mailto:saji0012@umn.edu)
+
+![](/assets/icons/instagram.svg)
+[Instagram](https://www.instagram.com/ma.i.yo/)
+
+![](/assets/icons/linkedin.svg)
+[LinkedIn](https://www.linkedin.com/in/maiyo-saji/)

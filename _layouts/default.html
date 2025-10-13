@@ -18,7 +18,7 @@
     {% include header.html %}
     <div class="sidebar-content-wrap">
       {% include sidebar.html %}
-      <div class="content-body">
+      <div class="content-body {% if page.body_class %}{{ page.body_class }}{% endif %}">
         {{ content }}
       </div>
     </div>
