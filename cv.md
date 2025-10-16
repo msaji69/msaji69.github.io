@@ -3,6 +3,11 @@ title: Maiyo Saji - cv
 ---
 
 # cv
+*select items
+
+## Education 
+- 2024–2026 (expected) University of Minnesota, M.A. in Geography, Minor in GIS
+- 2016–2020 Brown University, B.A. in Ethnic Studies
 
 ## Non-academic Publications
 
