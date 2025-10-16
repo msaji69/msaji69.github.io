@@ -1,0 +1,27 @@
+<div class="project-wrap">
+  <button
+    class="project-card"
+    style="background-image: url('{{ project.image }}')"
+  >
+    <div class="card-overlay">
+      <h3>
+        {{ project.title }}
+        <span style="font-style: italic">({{project.year}})</span>
+      </h3>
+    </div>
+  </button>
+
+  <dialog class="project-modal">
+    <button class="modal-close" aria-label="Close modal">
+      {% include icons/x.html %}
+    </button>
+    <h3>
+      {{ project.title }}
+      <span class="i">({{project.year}})</span>
+    </h3>
+    <p>{{ project.description }}</p>
+    <p>
+      <a href="{{project.url}}">Learn more</a>
+    </p>
+  </dialog>
+</div>

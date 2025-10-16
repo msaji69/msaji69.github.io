@@ -1,0 +1,43 @@
+academic:
+  - title: 'Climate Smart Communities: Tracing New York’s Just Transition'
+    year: 2025
+    description: 'Digital Spatial Humanities Spring 2025 final project investigating New York State’s progress in its “Climate Smart Communities” initiative.'
+    url: 'https://storymaps.arcgis.com/stories/786a1200ba6c4a0b8150ead55fa82fda'
+    image: '/assets/images/climate-smart.gif'
+
+  - title: 'Falling through the Cracks'
+    year: 2025
+    description: 'The first independent and in-depth report appraising Syracuse’s 2020 lead ordinance. I supported the research and design of exclusively the maps used in the report.'
+    url: 'https://earthjustice.org/press/2025/falling-through-the-cracks-lead-poisoning-prevention-must-be-a-priority-for-syracuse'
+    image: '/assets/images/earthjustice-report.png'
+
+creative:
+  - title: 'U-5 Group Exhibition'
+    year: 2024
+    description: 'A group exhibition of eleven early-career artists currently working or affiliated with “Nishimura Village” – an artist-architecture community in Kobe, Japan.'
+    url: 'https://www.instagram.com/p/C5s69lQvb0-/'
+    image: '/assets/images/u-5.jpg'
+
+  - title: 'Haioku Runway Show'
+    year: 2024
+    description: 'A performance project and zine I participated in exploring how a vacant, abandoned home can be reused and honored. Literally reusing old suits and kimonos left in the house, artists gathered to stage a fashion show, stitching together material remnants, each embodied a “yokai” (Japanese spirit) drifting through the space as its physical demolition occurred simultaneously on-site.'
+    url: 'https://www.instagram.com/p/C7EaVRShTjq/'
+    image: '/assets/images/haioku-runway.jpg'
+
+  - title: 'On Caring for the Environment Zine'
+    year: 2020
+    description: 'My capstone project for my degree in Ethnic Studies at Brown University.'
+    url: 'https://drive.google.com/file/d/1A-jQuMA9exEc2k7p926xps7nzvzEaqSZ/view?usp=sharing'
+    image: '/assets/images/earthjustice-zine.png'
+
+  - title: 'Latin American Contemporary Art Zine'
+    year: 2019
+    description: 'My final project for a Latin American History & Film course in college.'
+    url: 'https://drive.google.com/file/d/1fdwmX7z_T8XVO6NAr4085FakPZLYtBH8/view?usp=sharing'
+    image: '/assets/images/laca-zine.png'
+
+  - title: 'Now Here This, A Shared Meal & Car Ride Podcast Ep'
+    year: 2018
+    description: 'An audiostory I made interviewing Sherrie Anne Hart, co-founder of the FANG Collective—a racial and environmental justice direct action organization based in Providence, Rhode Island—about its mission and the work of organizing yourself out of a job.'
+    url: 'https://drive.google.com/file/d/1k2o0F7qgzZDy3FFoDWzjP3nvEctpB4Fb/view?usp=sharing'
+    image: '/assets/images/now-here-this.png'

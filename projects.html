@@ -1,0 +1,20 @@
+---
+title: Maiyo Saji - projects
+js: projects.js
+---
+
+<h1>projects</h1>
+
+<h2>academic projects</h2>
+
+<div class="projects-wrap">
+  {% for project in site.data.projects.academic %} {% include project.html %} {%
+  endfor %}
+</div>
+
+<h2>creative projects</h2>
+
+<div class="projects-wrap">
+  {% for project in site.data.projects.creative %} {% include project.html %} {%
+  endfor %}
+</div>

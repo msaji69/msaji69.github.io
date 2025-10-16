@@ -1,0 +1,19 @@
+---
+---
+
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="sidebar-content-wrap">
+      <nav class="sidebar">
+        {% include navigation.html %}
+      </nav>
+      <div class="content-body {% if page.body_class %}{{ page.body_class }}{% endif %}">
+        {{ content }}
+        {% include contact.html %}
+      </div>
+    </div>
+  </body>
+</html>
