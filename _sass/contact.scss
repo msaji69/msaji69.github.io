@@ -1,4 +1,4 @@
-@import 'breakpoints';
+@import 'utils';
 
 .contact {
   position: fixed;
@@ -9,13 +9,13 @@
   align-items: flex-end;
   gap: 1rem;
 
-  @include breakpoint-3 {
+  @include breakpoint-2 {
     position: unset;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin: 3rem 0;
+    margin: 3rem 0 5rem;
   }
 
   a {
@@ -35,13 +35,12 @@
         transform 0.3s,
         opacity 0.3s;
 
-      @include breakpoint-3 {
+      @include breakpoint-1 {
         display: none;
       }
     }
 
-    &:hover,
-    &:focus {
+    @include hover {
       color: #444;
 
       .contact-label {

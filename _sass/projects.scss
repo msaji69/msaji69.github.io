@@ -1,18 +1,35 @@
-@import 'breakpoints';
+@import 'utils';
 
-.projects-wrap {
+h2.projects-header {
+  margin: 4rem 0 3rem;
+
+  @include breakpoint-2 {
+    width: unset;
+  }
+}
+
+ul.projects-wrap {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+  gap: 4rem;
 
   @include breakpoint-2 {
     justify-content: center;
+  }
+
+  .project-wrap {
+    margin-bottom: 0;
+
+    &::before {
+      content: none;
+    }
   }
 
   .project-card {
     width: 24rem;
     height: 24rem;
     padding: 0;
-    margin: 2rem;
     background-position: center;
     background-size: cover;
     color: inherit;
@@ -37,13 +54,13 @@
       }
     }
 
-    &:hover .card-overlay,
-    &:focus .card-overlay,
-    &:active .card-overlay {
-      opacity: 1;
+    @include hover {
+      .card-overlay {
+        opacity: 1;
 
-      & > h3 {
-        transform: scale(1) translateY(0);
+        & > h3 {
+          transform: scale(1) translateY(0);
+        }
       }
     }
   }
@@ -96,7 +113,7 @@
         width: 3rem;
         height: 3rem;
 
-        &:hover {
+        @include hover {
           color: #666;
         }
       }

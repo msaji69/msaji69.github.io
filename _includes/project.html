@@ -1,27 +1,28 @@
-<div class="project-wrap">
+<li class="project-wrap">
   <button
     class="project-card"
     style="background-image: url('{{ project.image }}')"
+    aria-label="Open details for {{ project.title }}"
   >
     <div class="card-overlay">
       <h3>
         {{ project.title }}
-        <span style="font-style: italic">({{project.year}})</span>
+        <i>({{project.year}})</i>
       </h3>
     </div>
   </button>
 
-  <dialog class="project-modal">
-    <button class="modal-close" aria-label="Close modal">
+  <dialog class="project-modal" closedby="any">
+    <button class="modal-close" aria-label="Close modal" autofocus>
       {% include icons/x.html %}
     </button>
     <h3>
       {{ project.title }}
-      <span class="i">({{project.year}})</span>
+      <i>({{project.year}})</i>
     </h3>
     <p>{{ project.description }}</p>
     <p>
       <a href="{{project.url}}">Learn more</a>
     </p>
   </dialog>
-</div>
+</li>

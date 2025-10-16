@@ -5,16 +5,16 @@ js: projects.js
 
 <h1>projects</h1>
 
-<h2>academic projects</h2>
+<h2 class="projects-header">academic projects</h2>
 
-<div class="projects-wrap">
+<ul class="projects-wrap">
   {% for project in site.data.projects.academic %} {% include project.html %} {%
   endfor %}
-</div>
+</ul>
 
-<h2>creative projects</h2>
+<h2 class="projects-header">creative projects</h2>
 
-<div class="projects-wrap">
+<ul class="projects-wrap">
   {% for project in site.data.projects.creative %} {% include project.html %} {%
   endfor %}
-</div>
+</ul>

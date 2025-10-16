@@ -1,4 +1,4 @@
-@import 'breakpoints';
+@import 'utils';
 $header-height: 8.2rem;
 
 * {
@@ -42,20 +42,12 @@ a {
   color: inherit;
 }
 
-img {
-  width: 50rem;
-}
-
 button {
   font: inherit;
   color: inherit;
   background: none;
   border: none;
   padding: 0;
-}
-
-.i {
-  font-style: italic;
 }
 
 .header {
@@ -96,7 +88,7 @@ button {
         }
       }
 
-      &:hover {
+      @include hover {
         color: #666;
       }
     }
@@ -177,28 +169,35 @@ button {
   }
 }
 
-.navigation-item {
-  color: #444;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 0.8rem 4rem;
+.navigation-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.07);
-    color: #000;
+  .navigation-item {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.8rem 4rem;
+
+    @include hover {
+      background: rgba(0, 0, 0, 0.07);
+      color: #000;
+    }
   }
 }
 
 .content-body {
   width: 100%;
   height: calc(100vh - #{$header-height});
-  padding: 2rem 10rem;
+  padding: 2rem 15rem 2rem 6rem;
   position: relative;
   overflow: scroll;
 
   @include breakpoint-1 {
-    padding: 2rem 6rem;
+    padding: 2rem 9rem 2rem 6rem;
   }
 
   @include breakpoint-2 {
@@ -206,6 +205,29 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p,
+    ul,
+    ol,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 14rem;
+    float: left;
+    margin-right: 2rem;
+
+    @include breakpoint-2 {
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
   }
 
   h1 {
