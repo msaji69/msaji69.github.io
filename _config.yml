@@ -3,6 +3,12 @@ url: https://maiyosaji.com
 
 defaults:
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "default"
+      layout: 'default'
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+

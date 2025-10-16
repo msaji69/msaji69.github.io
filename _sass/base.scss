@@ -1,0 +1,238 @@
+@import 'breakpoints';
+$header-height: 8.2rem;
+
+* {
+  box-sizing: border-box;
+  cursor: url('/assets/cursor/frame_0.png'), auto;
+  animation: cursorAnimation 1.333s infinite;
+}
+
+@keyframes cursorAnimation {
+  0% {
+    cursor: url('/assets/cursor/frame_0.png'), auto;
+  }
+  15% {
+    cursor: url('/assets/cursor/frame_1.png'), auto;
+  }
+  45% {
+    cursor: url('/assets/cursor/frame_2.png'), auto;
+  }
+  60% {
+    cursor: url('/assets/cursor/frame_3.png'), auto;
+  }
+  100% {
+    cursor: url('/assets/cursor/frame_0.png'), auto;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  max-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#afeeee, #ebffff, #afeeee);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 50rem;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.i {
+  font-style: italic;
+}
+
+.header {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  & > :first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-wrap {
+    display: none;
+    position: relative;
+
+    @include breakpoint-1 {
+      display: block;
+    }
+
+    .menu-button {
+      margin-right: 1.5rem;
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+
+        path {
+          transition: all 0.5s;
+        }
+      }
+
+      &:hover {
+        color: #666;
+      }
+    }
+
+    #menu {
+      transform: scaleY(0);
+      opacity: 0;
+
+      &:popover-open {
+        inset: unset;
+        position: absolute;
+        top: $header-height;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 2rem 0;
+        transition:
+          transform 0.3s,
+          opacity 0.3s;
+        transform-origin: top;
+        transform: scaleY(1);
+        opacity: 1;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+        @include breakpoint-3 {
+          left: 0;
+          width: 100vw;
+          height: calc(100vh - #{$header-height});
+
+          .navigation-item {
+            font-size: 3rem;
+            text-align: center;
+          }
+        }
+
+        @starting-style {
+          transform: scaleY(0);
+          opacity: 0;
+        }
+
+        & + .menu-button svg {
+          .line-top {
+            transform: rotate(45deg);
+          }
+          .line-middle {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+          }
+          .line-bottom {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.sajiStamp {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.sidebar-content-wrap {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - #{$header-height});
+  min-width: 25rem;
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+
+  @include breakpoint-1 {
+    display: none;
+  }
+}
+
+.navigation-item {
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.8rem 4rem;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.07);
+    color: #000;
+  }
+}
+
+.content-body {
+  width: 100%;
+  height: calc(100vh - #{$header-height});
+  padding: 2rem 10rem;
+  position: relative;
+  overflow: scroll;
+
+  @include breakpoint-1 {
+    padding: 2rem 6rem;
+  }
+
+  @include breakpoint-2 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '◌';
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
