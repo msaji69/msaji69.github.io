@@ -1,3 +1,29 @@
+const LANDING_PAGE_ART = [
+  '/assets/images/saji-painting.png',
+  '/assets/images/moonhouse.jpeg',
+  '/assets/images/BK_AptWindow_1.jpg',
+  '/assets/images/BK_AptWindow_2.jpg',
+  '/assets/images/constructionwindow.jpg',
+  '/assets/images/man_painting.jpg',
+  '/assets/images/plant_monoprint.jpg',
+  '/assets/images/toiletflowers_photo.jpg',
+]
+
+function setLandingPageArt() {
+  const enterLink = document.getElementById('enter-link')
+  if (!enterLink.querySelector('img')) {
+    const randomArt =
+      LANDING_PAGE_ART[Math.floor(Math.random() * LANDING_PAGE_ART.length)]
+
+    const img = document.createElement('img')
+    img.src = randomArt
+    img.alt = 'Enter'
+    img.ariaLabel = 'A piece of art made by Maiyo Saji.'
+
+    enterLink.appendChild(img)
+  }
+}
+
 // [ { DOMElement: EventHandler } ]
 const eventListeners = []
 
@@ -47,6 +73,7 @@ function removeEventListeners() {
 }
 
 document.addEventListener('turbo:load', function () {
+  if (window.location.pathname === '/') setLandingPageArt()
   if (window.location.pathname === '/projects') projectsMount()
 })
 
