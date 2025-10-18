@@ -32,4 +32,4 @@ Each project should be nested under either `academic` or `creative` and structur
 
 ### Landing Page Art
 
-To make changes to what artwork is displayed on the landing page, you'll need to modify the `LANDING_PAGE_ART` array in [this file](https://github.com/msaji69/msaji69.github.io/blob/main/assets/js/index.js). Simply add or remove any of the paths/links.
+To make changes to what artwork is displayed on the landing page, you'll need to modify the `LANDING_PAGE_ART` array in [this file](https://github.com/msaji69/msaji69.github.io/blob/main/assets/js/landing_controller.js). Simply add or remove any of the paths/links.
