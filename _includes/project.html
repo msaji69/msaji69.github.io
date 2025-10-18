@@ -1,6 +1,7 @@
-<li class="project-wrap">
+<li class="project-wrap" data-controller="project">
   <button
     class="project-card"
+    data-action="click->project#openModal"
     style="background-image: url('{{ project.image }}')"
     aria-label="Open details for {{ project.title }}"
   >
@@ -12,8 +13,13 @@
     </div>
   </button>
 
-  <dialog class="project-modal" closedby="any">
-    <button class="modal-close" aria-label="Close modal" autofocus>
+  <dialog class="project-modal" data-project-target="modal" closedby="any">
+    <button
+      class="modal-close"
+      aria-label="Close modal"
+      data-action="click->project#closeModal"
+      autofocus
+    >
       {% include icons/x.html %}
     </button>
     <h3>

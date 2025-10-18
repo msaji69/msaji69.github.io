@@ -7,7 +7,12 @@ title: Maiyo Saji
 <html>
   {% include head.html %}
   <body class="landing-page">
-    <a href="/about.html" id="enter-link" aria-label="Enter the website">
+    <a
+      href="/about.html"
+      aria-label="Enter the website"
+      data-controller="landing"
+      data-landing-target="enterLink"
+    >
       <div class="enter-overlay"></div>
     </a>
   </body>
