@@ -1,7 +1,7 @@
 academic:
   - title: 'Climate Smart Communities: Tracing New York’s Just Transition'
     year: 2025
-    description: 'Digital Spatial Humanities Spring 2025 final project investigating New York State’s progress in its “Climate Smart Communities” initiative.'
+    description: 'A StoryMap investigating New York State’s progress in its “Climate Smart Communities” initiative. My final project in a Digital Spatial Humanities graduate seminar.'
     url: 'https://storymaps.arcgis.com/stories/786a1200ba6c4a0b8150ead55fa82fda'
     image: '/assets/images/climate-smart.gif'
 
@@ -36,8 +36,3 @@ creative:
     url: 'https://drive.google.com/file/d/1fdwmX7z_T8XVO6NAr4085FakPZLYtBH8/view?usp=sharing'
     image: '/assets/images/laca-zine.png'
 
-  - title: 'Now Here This, A Shared Meal & Car Ride Podcast Ep'
-    year: 2018
-    description: 'An audiostory I made interviewing Sherrie Anne Hart, co-founder of the FANG Collective—a racial and environmental justice direct action organization based in Providence, Rhode Island—about its mission and the work of organizing yourself out of a job.'
-    url: 'https://drive.google.com/file/d/1k2o0F7qgzZDy3FFoDWzjP3nvEctpB4Fb/view?usp=sharing'
-    image: '/assets/images/now-here-this.png'
