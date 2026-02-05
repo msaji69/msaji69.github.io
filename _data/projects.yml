@@ -2,7 +2,7 @@ academic:
 
   - title: 'From Visual Breakdown to Visual Relations'
     year: 2025
-    description: 'An exploration of New york City\u0027s interactive environmental justice mapping tool. My final project in a Cartography graduate seminar.'
+    description: "An exploration of New york City's interactive environmental justice mapping tool. My final project in a Cartography graduate seminar."
     url: 'https://storymaps.arcgis.com/stories/787f67954c794227832315b1dcd3708b'
     image: '/assets/images/ejnyc-map.png' 
 
