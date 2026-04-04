@@ -12,6 +12,7 @@ Currently, Maiyo is a master’s student in Geography at the University of Minne
 
 Their research interests include:
 
+
 - Geovisualization; Digital Geographies
 - Political Ecology
 - Decoloniality; Postcolonial Transpacific
