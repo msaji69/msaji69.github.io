@@ -4,7 +4,7 @@ title: Maiyo Saji - about
 
 # about
 
-![Photo of Maiyo](/assets/images/maiyo-face.jpg)
+![Photo of Maiyo](/assets/images/bad_lighting_me.JPG)
 
 Maiyo (“my-oh”) Saji (they/she) was born and raised in Morningside Heights, Manhattan. They are second-generation Japanese American and have worked as a community organizer and paralegal on a variety of issues related to environmental and racial justice, immigrant rights, and climate and energy policy. They are also an oil painter, printmaker, and more recently learning to bookbind.
 
@@ -12,10 +12,8 @@ Currently, Maiyo is a master’s student in Geography at the University of Minne
 
 Their research interests include:
 
-- Geovisualization technologies; New Media
-- Decolonial anthropocene studies
-- Critical Political Ecology
-- Digital Geography; Digital Natures
+- Geovisualization; Digital Geographies
+- Political Ecology
+- Decoloniality; Postcolonial Transpacific
 - Visual culture and aesthetic theory
 
-Maiyo holds a B.A. from Brown University in Ethnic Studies. You can find their undergraduate academic portfolio [here](https://brown.digication.com/mayo-saji-capstone-ethnic-studies-2020/home).
