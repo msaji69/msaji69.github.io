@@ -6,6 +6,12 @@ academic:
     url: 'https://storymaps.arcgis.com/stories/787f67954c794227832315b1dcd3708b'
     image: '/assets/images/ejnyc-map.png' 
 
+  - title: 'Climate Smart Communities: Tracing New York’s Just Transition'
+    year: 2025
+    description: 'A StoryMap investigating New York State’s progress in its “Climate Smart Communities” initiative. My final project in a Digital Spatial Humanities graduate seminar.'
+    url: 'https://storymaps.arcgis.com/stories/786a1200ba6c4a0b8150ead55fa82fda'
+    image: '/assets/images/climate-smart.gif'
+
   - title: 'Falling through the Cracks'
     year: 2025
     description: 'The first independent and in-depth report appraising Syracuse’s 2020 lead ordinance. I supported the research and design of exclusively the maps used in the report.'
@@ -23,7 +29,7 @@ creative:
     year: 2024
     description: 'A performance project and zine I participated in exploring how a vacant, abandoned home can be reused and honored. Literally reusing old suits and kimonos left in the house, artists gathered to stage a fashion show, stitching together material remnants, each embodied a “yokai” (Japanese spirit) drifting through the space as its physical demolition occurred simultaneously on-site.'
     url: 'https://www.instagram.com/p/C7EaVRShTjq/'
-    image: '/assets/images/haioku-runway.jpg'
+    image: '/assets/images/haiokurunway_zine.png'
 
   - title: 'On Caring for the Environment Zine'
     year: 2020
